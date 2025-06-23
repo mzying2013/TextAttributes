@@ -30,3 +30,4 @@ xcuserdata
 
 # Carthage
 Carthage/Build
+.DS_Store
