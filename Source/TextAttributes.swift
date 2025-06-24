@@ -1074,7 +1074,7 @@ open class TextAttributes {
         // MARK: - Shadow
 
         /// The shadow attribute.
-        open var shadow: NSShadow? {
+        public var shadow: NSShadow? {
             get {
                 return dictionary[.shadow] as? NSShadow
             }
@@ -1114,7 +1114,7 @@ open class TextAttributes {
              - returns: The receiver.
              */
             @discardableResult
-            open func shadow(color: AnyObject?, offset: CGSize, blurRadius: CGFloat) -> Self {
+        public func shadow(color: AnyObject?, offset: CGSize, blurRadius: CGFloat) -> Self {
                 return shadow({
                     let shadow = NSShadow()
                     shadow.shadowColor = color
@@ -1133,7 +1133,7 @@ open class TextAttributes {
          - returns: The receiver.
          */
         @discardableResult
-        open func shadow(_ shadow: NSShadow?) -> Self {
+        public func shadow(_ shadow: NSShadow?) -> Self {
             self.shadow = shadow
             return self
         }
@@ -1141,7 +1141,7 @@ open class TextAttributes {
         // MARK: - Attachment
 
         /// The attachment attribute.
-        open var attachment: NSTextAttachment? {
+        public var attachment: NSTextAttachment? {
             get {
                 return dictionary[.attachment] as? NSTextAttachment
             }
@@ -1158,7 +1158,7 @@ open class TextAttributes {
          - returns: The receiver.
          */
         @discardableResult
-        open func attachment(_ attachment: NSTextAttachment?) -> Self {
+        public func attachment(_ attachment: NSTextAttachment?) -> Self {
             self.attachment = attachment
             return self
         }

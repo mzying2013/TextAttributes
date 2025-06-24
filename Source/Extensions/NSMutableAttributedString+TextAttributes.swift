@@ -30,7 +30,7 @@ extension NSMutableAttributedString {
 
      - parameter attributes: The attributes to set.
      */
-    open func setAttributes(_ attributes: TextAttributes) {
+    public func setAttributes(_ attributes: TextAttributes) {
         setAttributes(attributes, range: NSRange(mutableString))
     }
 
@@ -40,7 +40,7 @@ extension NSMutableAttributedString {
      - parameter attributes: The attributes to set.
      - parameter range:      The range of characters whose attributes are set.
      */
-    open func setAttributes(_ attributes: TextAttributes, range: Range<Int>) {
+    public func setAttributes(_ attributes: TextAttributes, range: Range<Int>) {
         setAttributes(attributes, range: NSRange(range))
     }
 
@@ -50,7 +50,7 @@ extension NSMutableAttributedString {
      - parameter attributes: The attributes to set.
      - parameter range:      The range of characters whose attributes are set.
      */
-    open func setAttributes(_ attributes: TextAttributes, range: NSRange) {
+    public func setAttributes(_ attributes: TextAttributes, range: NSRange) {
         setAttributes(attributes.dictionary, range: range)
     }
 
@@ -59,7 +59,7 @@ extension NSMutableAttributedString {
 
      - parameter attributes: The attributes to add.
      */
-    open func addAttributes(_ attributes: TextAttributes) {
+    public func addAttributes(_ attributes: TextAttributes) {
         addAttributes(attributes, range: NSRange(mutableString))
     }
 
@@ -69,7 +69,7 @@ extension NSMutableAttributedString {
      - parameter attributes: The attributes to add.
      - parameter range:      he range of characters to which the specified attributes apply.
      */
-    open func addAttributes(_ attributes: TextAttributes, range: Range<Int>) {
+    public func addAttributes(_ attributes: TextAttributes, range: Range<Int>) {
         addAttributes(attributes, range: NSRange(range))
     }
 
@@ -79,7 +79,7 @@ extension NSMutableAttributedString {
      - parameter attributes: The attributes to add.
      - parameter range:      he range of characters to which the specified attributes apply.
      */
-    open func addAttributes(_ attributes: TextAttributes, range: NSRange) {
+    public func addAttributes(_ attributes: TextAttributes, range: NSRange) {
         addAttributes(attributes.dictionary, range: range)
     }
 }
