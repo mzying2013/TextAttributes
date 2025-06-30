@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = 'TextAttributes'
-  s.version       = '12.0.3'
+  s.version       = '12.0.4'
   s.license       = 'MIT'
   s.homepage      = 'https://git.typhur.net/iot-platform/ios/TextAttributes'
   s.author        = { 'bill' => 'bill.liu@typhur.com' }
